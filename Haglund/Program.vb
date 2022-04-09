@@ -28,6 +28,11 @@
         ' Hämta presenten
         Dim present As Dinner = GetPresent(Fredrik)
 
+        ' Se till att presenten passar
+        If present Is Nothing Then
+            Return
+        End If
+
         ' Skriv ut information om presenten
         Console.WriteLine(New String("-", Console.BufferWidth))
         Console.WriteLine()
